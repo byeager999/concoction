@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    <script type="text/javascript" src="./drinks.js"></script>
+
 
     <title>Concoction</title>
 </head>
@@ -21,44 +21,32 @@
             <div class="col-md-12">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
                     <h1>Concoction</h1>
-                    <p>Search the web for various cocktails and save the ones you'd like to try at your next get together!</p>
+                    <p>Search the web for your favorite cocktails!</p>
                     <form action="">
-                        <input type="text">
+                        <input type="text" id="drink-input">
                         <button class="btn btn-outline-light" type="submit" id="drink-search">Search</button>
-                        <button class="btn btn-outline-light" type="submit" id="random-drink">Random</button>
+                        
                     </form>
-        
+                    <p>Or if you're feeling adventorous click the Random button and get a drink might like to make at your next get together!</p>
+                        <button class="btn btn-outline-light" type="submit" id="random-drink">Random</button>
+
                 </div>
 
             </div>
 
         </div>
 
-        
+
 
         <div class="row">
             <div class="col-md-4 offset-md-4">
-                <div class="card" style="width: 18rem;" id="drink-card">
-                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ja3RhaWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
-                        class="card-img-top" alt="drink-picture">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                    </ul>
-        
-                </div>
+                <div id="drinks-view"></div>
 
             </div>
 
         </div>
 
-        
+
 
 
 
@@ -92,11 +80,12 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script></body>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-</body>
+    <script type="text/javascript" src="./drinks.js"></script>
 
 </html>
